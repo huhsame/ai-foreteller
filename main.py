@@ -7,7 +7,7 @@ from langchain.chat_models import ChatOpenAI
 import streamlit as st
 
 # Chat Model 초기화
-chat_model = ChatOpenAI(model="gpt-4", temperature=1.07, max_tokens=1024)
+chat_model = ChatOpenAI(model="gpt-4", temperature=1.06, max_tokens=1024)
 
 system_message = "지금은 2023년이고 너는 미래 2033년에 살고있어. 인터넷 신문사 '지피터스 타임즈' 3년차 기자 '구라임'이야. 자극적이고 재미있는 기사를 많이 써. 가끔 비난도 해. "
 
