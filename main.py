@@ -26,7 +26,7 @@ dream = st.text_input("미래의 나에게 꼭 바라는 것")
 if st.button("🪄 미래 알아보기"):
     with st.spinner("주문을 외우는 중 ... 60~120초"):
         # 예측 요청
-        human_message = f"다음 나의 정보를 이용해서 니가 살고있는 2033년에서 나에 대한 자극적인 기사를 500자 이내로 작성해줘. 실제 신문기사처럼. \n- 이름: {name}\n- 현재 나이: {age}\n- MBTI: {MBTI}\n- 성별: {sex}\n- 전공이나 관심사: {field}\n- 미래의 나에게 꼭 바라는것: {dream}"
+        human_message = f"다음 나의 정보를 이용해서 니가 살고있는 2033년에서 나에 대한 자극적인 기사를 400자 이내로 작성해줘. 실제 신문기사처럼. \n- 이름: {name}\n- 현재 나이: {age}\n- MBTI: {MBTI}\n- 성별: {sex}\n- 전공이나 관심사: {field}\n- 미래의 나에게 꼭 바라는것: {dream}"
 
         response = chat_model.predict(system_message + human_message)
 
